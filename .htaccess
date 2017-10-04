@@ -1,0 +1,38 @@
+#### Gzip
+<IfModule mod_rewrite.c>
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^(.*)(js|css)$ redir.php?file=$1$2&type=$2 [L]
+</IfModule>
+#### Expires
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+Header set Cache-Control "max-age=31449600, public"
+</FilesMatch>
+#### Turn off the ETags
+Header unset ETag
+FileETag None
+#### Charset
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+
+RewriteRule ^index.html$ index.php
+RewriteRule ^products$ index.php?page=products
+RewriteRule ^products/page-([0-9]+).html$ index.php?page=products&p=$1
+RewriteRule ^introduction$ index.php?page=info
+RewriteRule ^payment$ index.php?page=checkout
+RewriteRule ^sitemap$ index.php?page=sitemap
+RewriteRule ^contact$ index.php?page=contact
+RewriteRule ^saleoff$ index.php?page=saleoff
+RewriteRule ^highrating$ index.php?page=highrating
+
+RewriteRule ^products/([A-Za-z0-9-]+)$ index.php?page=products&TenLoai=$1
+RewriteRule ^products/([A-Za-z0-9-]+)/page-([0-9]+).html$ index.php?page=products&TenLoai=$1&p=$2
+RewriteRule ^search/keyword=(.*)/page-([0-9]+).html$ index.php?keyword=$1&p=$2
+RewriteRule ^search/keyword=(.*)$ index.php?keyword=$1
+RewriteRule ^productdetails/([A-Za-z0-9-]+)-([0-9]+).html$ index.php?page=productdetails&p_id=$2
+RewriteRule ^productdetails/([A-Za-z0-9-]+)-([0-9]+)/page-([0-9]+).html$ index.php?page=productdetails&p_id=$2&p=$3
+
+RewriteRule ^page-([0-9]+).html$ index.php?page=home&p=$1

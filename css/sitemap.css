@@ -1,0 +1,13 @@
+#sitemap h3{color:#3C3C3C; font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; text-transform:uppercase;}
+#sitemap a:hover{color:#207FAB;}
+
+#cat_tree{clear:both; overflow: hidden; padding: 3px 0 0;}
+div.tree_top{background: url('../images/sitemap-top.gif') no-repeat 0 0; height: 26px; margin: 7px 0 0; padding: 3px 0 0 28px;}
+div.tree_top a{font-weight: bold; text-transform: uppercase;}
+ul.tree{margin: -9px 0 0 -39px; text-align: left;}
+ul.tree li{background: url('../images/sitemap-horizontal.gif') no-repeat 0 12px; border-left: 1px solid #A1A1A1; margin: 0 0 0 11px; padding: 5px 0 0 16px; width:300px; height: auto; float: none;}
+ul.tree li.last{background: url('../images/sitemap-last.gif') no-repeat 0 0; border: none;}
+ul.tree a{margin-left:0;}
+ul.tree li ul{padding: 2px 0 0 35px;}
+ul.tree li ul li {padding: 3px 0 0 15px; height: 20px; text-align: left;}
+ul.tree li ul li a{font-size: 11px; text-decoration: underline;}

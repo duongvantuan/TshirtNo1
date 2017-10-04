@@ -1,0 +1,72 @@
+/*_____________________________Product________________________*/
+
+/*-- Link to product --*/
+#productdetails .link{border-bottom:1px solid #888888; font-family:Arial, Helvetica, sans-serif; color:#888888; padding:5px 0 5px 0; margin-right:7px;}
+
+
+/*--  Left column --*/
+#product_left_col{width:250px; padding:15px 15px 0 0; display:block; float:left;}
+#image_block{width:250px; height:245px; background:#DADADA; 
+			 -moz-border-radius:5px; -webkit-border-radius:5px;
+			 -khtml-border-radius:5px; border-radius:5px;
+			 padding-top:20px; border:1px solid #C0C0C0;}
+#image_block img{position:absolute; max-width:180px; width: expression(this.width > 180 ? 180: true); max-height:180px; height: expression(this.height > 180 ? 180: true); border:0}
+#image_block img#bigpic{cursor: pointer; width: 180px; height: 180px; margin-left:35px; display:none;}
+
+#thumbs {width:250px; height:51px; margin:-51px 0 0; background: url("../images/preview_img.png") no-repeat 0 0;}
+
+#thumbs li{width:45px; height:45px; float:left; padding-bottom:0px; margin:2px 10px 0 0;}
+#thumbs li.active{height:45px; border:1px solid #000000; padding-bottom:0px; margin-top:2px;}
+#thumbs img{float:left; max-width:45px; width: expression(this.width > 45 ? 45: true); max-height:45px; height: expression(this.height > 45 ? 45: true);}
+
+/*--  Right column --*/
+#product_right_col{width:200px; padding:0 0 20px; float:left;}
+#product_right_col p{color:#303030;}
+#product_right_col span{color:#000; font-weight:bold;}
+#product_right_col span.cost{color:#F00;}
+#product_right_col img{margin: -30px 0 0 -5px;}
+
+/* Lightbox sử dụng jQuery */
+#jquery-overlay {position: absolute; top: 0; left: 0; z-index: 90; width: 100%; height: 500px;}
+#jquery-lightbox {position: absolute; top: 0; left: 0; width: 100%; z-index: 9999; text-align: center; line-height: 0;}
+#jquery-lightbox a img {border: none;}
+
+#lightbox-container-image-box {position: relative; background-color: #FFFFFF; width: 250px; height: 250px; margin: 0 auto;}
+#lightbox-container-image { padding: 10px; }
+
+#lightbox-loading {position: absolute; top: 40%; left: 0%; height: 25%; width: 100%; text-align: center; line-height: 0;}
+#lightbox-nav {position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 10;}
+#lightbox-container-image-box > #lightbox-nav { left: 0; }
+#lightbox-nav a {outline: none;}
+#lightbox-nav-btnPrev, #lightbox-nav-btnNext {width: 49%; height: 100%; zoom: 1; display: block;}
+#lightbox-nav-btnPrev {left: 0; float: left;}
+#lightbox-nav-btnNext { right: 0; float: right;}
+#lightbox-container-image-data-box {font: 10px Verdana, Helvetica, sans-serif; background-color: #FFFFFF; margin: 0 auto; line-height: 1.4em; overflow: auto; width: 100%; padding: 0 10px 0;}
+#lightbox-container-image-data {padding: 0 10px; color: #666; }
+#lightbox-container-image-data #lightbox-image-details {width: 70%; float: left; text-align: left; }	
+#lightbox-image-details-caption { font-weight: bold; }
+#lightbox-image-details-currentNumber {display: block; clear: left; padding-bottom: 1.0em;}				
+#lightbox-secNav-btnClose {width: 66px; float: right; padding-bottom: 0.7em;}
+			
+/* Rating Style */
+#rating {list-style:none; width:460px; margin: 0; padding: 0; width: 145px; }
+#rating li { display:inline; float:left; height: auto; width: auto; padding: 0;}
+#rating li a { display:block; width:15px; height:15px; margin:5px; border:1px solid #888; background-color:#333; text-indent:-9999px;
+	-moz-box-shadow:0 0 5px #888; -moz-border-radius:40px; -webkit-box-shadow:0 0 5px #888; -webkit-border-radius:40px; -o-box-shadow:0 0 5px #888; -o-border-radius:40px; }
+
+/*-----  Description -----*/
+#description{clear:both; background:#DADADA; width:480px; height:auto; margin-top:5px; -moz-border-radius:5px; -webkit-border-radius:5px; -khtml-border-radius:5px; border-radius:5px;}
+#description span{padding:5px 0 5px 10px; font-weight:bold;}
+#description p{padding:5px 0 5px 10px;}
+
+/*_____________________________Comment________________________*/
+#comment form table {padding-top:10px;}
+#comment form table tr td{padding-top:10px; width:80px;}
+#comment form table tr td span{font-weight:bold; color:#0072BC; padding-right:5px; line-height:10px;}
+td p{color:#F00; font-weight:bold; font-size:12px;}
+#comment form table tr td ul li{float:none; font-size:11px; text-align:left; width:450px; height:14px; list-style-type:square; margin-left:30px;}
+
+#submit_cmt{float:left; margin:0 120px 0 90px;}
+
+/*-- p error for form*/
+p.error {padding-left: 30px; font-weight: normal; color: #E6443C; font-size:11px; line-height: 0;}     

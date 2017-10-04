@@ -1,0 +1,48 @@
+/* =Skitter styles
+----------------------------------------------- */
+.box_skitter {position:relative; width:725px; height:250px; background:#FFFFFF;}
+.box_skitter img {max-width:725px; width: expression(this.width > 500 ? 500: true);height:auto; border:0;}
+.box_skitter ul {display:none;}
+.box_skitter .container_skitter {overflow:hidden; position:relative;}
+
+/* =Box clone
+-------------------------------------------------------------- */
+.box_skitter .box_clone {position:absolute; top:0; left:0; width:100px; overflow:hidden; display:none; z-index:20;}
+.box_skitter .box_clone img {position:absolute; top:0; left:0; z-index:20;}
+
+/* =Navigation
+-------------------------------------------------------------- */
+.box_skitter .prev_button {position:absolute; top:50%; left:35px; z-index:100; width:42px; height:42px; overflow:hidden; text-indent:-9999em;margin-top:-25px;background:url("../images/prev.png") no-repeat left top;}
+.box_skitter .next_button {position:absolute; top:50%; right:35px; z-index:100; width:42px; height:42px; overflow:hidden; text-indent:-9999em; margin-top:-25px; background:url("../images/next.png") no-repeat left top;}
+
+/* =Numbers
+-------------------------------------------------------------- */
+.box_skitter .info_slide {position:absolute; top:15px; left:15px; z-index:100; background:#000000; color:#FFFFFF; font:bold 11px arial; padding:5px 0 5px 5px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; opacity:0.7;}
+.box_skitter .info_slide .image_number {background:#FFFFFF; float:left; padding:2px 10px; margin:0 5px 0 0; cursor:pointer; -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px;}
+.box_skitter .info_slide .image_number_select {background:#000000; float:left; padding:2px 10px; margin:0 5px 0 0;}
+
+/* =Dots
+-------------------------------------------------------------- */
+.box_skitter .info_slide_dots {position:absolute; bottom:-40px; z-index:151; padding:5px 0 5px 5px; -moz-border-radius:50px; -webkit-border-radius:50px; border-radius:50px;}
+.box_skitter .info_slide_dots .image_number {background:#333333; float:left;margin:0 5px 0 0;cursor:pointer;-moz-border-radius:50px;-webkit-border-radius:50px;border-radius:50px;width:18px;height:18px;text-indent:-9999em;overflow:hidden;}
+.box_skitter .info_slide_dots .image_number_select {background:#CC0000;float:left;margin:0 5px 0 0;}
+
+/* =Loading
+-------------------------------------------------------------- */
+.loading {position:absolute; top:50%; right:50%; z-index:10000; margin:-16px -16px; color:#fff; text-indent:-9999em; overflow:hidden; background:url("../images/ajax-loader.gif") no-repeat left top; width:32px; height:32px;}
+
+/* =Label
+-------------------------------------------------------------- */
+.box_skitter .label_skitter 	{ z-index:150; position:absolute; bottom:0px; left:0px; display:none; }
+.box_skitter .label_skitter 	{ z-index:150; position:absolute; bottom:0px; left:0px; color:#FFFFFF; display:none; opacity:0.8; background:#000000; }
+.box_skitter .label_skitter p 	{ padding:10px;margin:0;font:normal 16px arial,tahoma;}
+.box_skitter .info_slide * 		{font-family:Consolas,arial,tahoma !important; }
+.box_skitter .progressbar 		{background:#000000; position:absolute; top:5px;left:15px;height:5px; width: 200px; z-index:99; border-radius:20px;}
+
+/* =Focus
+-------------------------------------------------------------- */
+#overlay_skitter { position:absolute; top:0; left:0; width:100%; z-index:9998; opacity:1; background:#000000; }
+
+.box_skitter .focus_button {position:absolute;top:50%;z-index:100;width:42px;height:42px;overflow:hidden;text-indent:-9999em;margin-top:-25px;background:url("../images/focus-button.png") no-repeat left top;opacity:0;}
+.box_skitter .play_pause_button {position:absolute;top:50%;z-index:151;width:42px;height:42px;overflow:hidden;text-indent:-9999em;margin-top:-25px;background:url("../images/pause-button.png") no-repeat left top;opacity:0;}
+.box_skitter .play_pause_button.play_button {background:url("../images/play-button.png") no-repeat left top;}

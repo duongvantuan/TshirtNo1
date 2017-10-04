@@ -1,0 +1,34 @@
+/*Style cho trang admin */
+
+body {font-family: Arial; font-size: 12px;}
+
+#admin a{text-decoration: none;}
+#admin a:hover{text-decoration: underline; color: #3C3C3C;}
+
+/* Login admin*/
+#wrapper-login{margin:0 auto; text-align:left; width:300px;}
+#login-admin-form{padding-top:20%;}
+#login-admin-form table{width: 300px; border: 1px dashed #3C3C3C; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; padding: 5px; background: #DEDEDE;}
+#login-admin-form span{font-size: 14px; font-weight: bolder; color: #207FAB;}
+#login-admin-form input[type="text"].login_register, input[type="password"].login_register{background:url("../images/login_register.png") no-repeat 0 2px; width:190px; height:25px; border:0;}
+#login-admin-form a{text-decoration: none; color: #207FAB;}
+#login-admin-form a:hover{text-decoration: underline; color: #3C3C3C;}
+
+#wrapper{margin:0 auto; text-align:left; width:950px;}
+#contents{background-color: #DEDEDE; position: relative; padding-top: 5px; margin-top: 10px;}
+#contents a{color: #207FAB; font-weight: bold; font-size:12px;}
+#contents table img{width: 100px; height: 100px;}
+#contents table tr{padding: 5px;}
+#contents table .tables-admin td{border-right: 1px dashed #C0C0C0; padding: 5px;} 
+#contents table .tables-admin a{font-size:12px; font-weight: normal;}
+#contents a.paging{border: 1px solid #207FAB; margin: 3px; padding: 2px; font-weight: normal;}
+#contents a.paging:hover{background: #3C3C3C; color: #FFFFFF; text-decoration: none;  font-weight: bold;}
+#contents a.cur-page{border: 1px solid #207FAB; background: #207FAB; color: #FFFFFF;  font-weight: bold;}
+#contents p.title{text-transform: uppercase; text-align: center; color: #207FAB; font-weight: bold; font-size: 14px;}
+#contents input[type='text'], input[type='password']{height: 20px; font-size: 12px; border: 1px solid #6AD2F6;}
+#contents textarea{resize: none; border: 1px solid #6AD2F6;}
+#contents .submit-btn{float: left; margin-left: 150px;}
+#contents p.error{color: #FF0000; font-weight: bold; text-transform: uppercase;}
+#contents p.success{color: #207FAB; font-weight: bold; text-transform: uppercase; font-size: 14px; text-align: center;}
+#contents p.path{color: #007ACF;}
+#contents p.path:hover{text-decoration: underline; cursor: pointer;}
